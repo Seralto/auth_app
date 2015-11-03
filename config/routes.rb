@@ -3,4 +3,8 @@ Rails.application.routes.draw do
 
   resources :users
   get 'signup' => 'users#new'
+  get 'signin' => 'users#signin'
+
+  post 'signin' => 'users#login'
+  get 'logout' => 'users#logout'
 end
